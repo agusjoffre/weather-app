@@ -3,7 +3,7 @@ import renderModule from "./print";
 const logicModule = (location) => {
   const apiKey = "8589d28f885443ffbd1204158230912";
 
-  let url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
+  let url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
 
   async function getData() {
     const response = await fetch(url);
